@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; img-src 'self'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Bubble Punks is a pocket-sized party battle game. Trap your rivals in bubbles, pop them, and be the last crew standing.">
+<meta name="theme-color" content="#14121b">
+<title>Bubble Punks</title>
+<style>
+:root { color-scheme: dark;
+  --night: #14121b; --panel: #211e2b; --line: #3d3850; --outline: #1a1424;
+  --ink: #f7f5ff; --soft: #b4aec8; --candy: #ff3d7f; --sky: #2ee6ff;
+  --sun: #ffc93d; --link: #8ff1ff; }
+html { background: var(--night); font-size: 106.25%; }
+@supports (font: -apple-system-body) { html { font: -apple-system-body; } }
+body { margin: 0; color: var(--ink); background: var(--night);
+  font-size: 1rem; line-height: 1.5;
+  font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; }
+.hero { position: relative; display: flex; flex-direction: column;
+  align-items: center; justify-content: flex-start; }
+.hero h1 { margin: 0; line-height: 0; }
+.hero h1 img { width: min(84vw, 560px); height: auto;
+  filter: drop-shadow(0 10px 24px rgba(0,0,0,.45)); }
+.hero h1 { position: relative; }
+.hero h1 sup { position: absolute; right: 2%; top: 8%; font-size: 0.8rem;
+  line-height: 1; color: var(--soft); font-weight: 700; }
+.text { max-width: 34rem; margin: 0 auto; padding: 0 1rem; }
+.chant { margin: 0.4rem 0 0; font-weight: 800;
+  font-size: clamp(1.4rem, 6vw, 1.9rem); }
+.chant span:nth-child(1) { color: var(--candy); }
+.chant span:nth-child(2) { color: var(--sky); }
+.chant span:nth-child(3) { color: var(--sun); }
+.pitch { margin: 0.8rem auto 0; max-width: 24rem; color: var(--soft);
+  font-size: 1.1rem; }
+.soon { display: inline-block; margin: 1.5rem auto 0; padding: 0.5rem 0.85rem;
+  border: 2px solid var(--line); border-radius: 1.4rem; background: var(--panel);
+  font-weight: 700; font-size: 0.85rem; }
+.soon::before { content: ""; display: inline-block; width: 0.55rem;
+  height: 0.55rem; margin-right: 0.55rem; border-radius: 50%;
+  background: var(--sky); box-shadow: 0 0 0.6rem var(--sky); vertical-align: 0.08em; }
+.about { margin-top: 3rem; padding: 0 1rem 2rem; color: var(--soft);
+  font-size: 0.92rem; }
+.about p { margin: 0.3rem 0; }
+a { color: var(--link); text-underline-offset: 0.18em; }
+nav { margin: 0.9rem 0 0; }
+nav a { display: inline-block; margin: 0.2rem 0.6rem; white-space: nowrap; }
+footer { margin: 0.9rem 0 0; color: #8a84a0; font-size: 0.85rem; }
+/* A: the rooftop fills the top, fading into the night. */
+.hero { min-height: 47svh; padding: 2.2rem 1rem 0;
+  background:
+    linear-gradient(to bottom, rgba(20,18,27,.15) 0%, rgba(20,18,27,0) 35%,
+      rgba(20,18,27,.55) 75%, var(--night) 100%),
+    url(img/rooftop.jpg) center 22% / cover no-repeat; }
+.hero h1 img { margin-top: 1vh; }
+@media (min-width: 900px) { .hero { min-height: 64vh; padding-top: 3rem; }
+  .hero h1 img { width: 520px; } }
+/* Line 4, the X link (the Deployment Engineer's spacing; the designer may
+   restyle it). */
+.follow { margin: 1rem 0 0; color: var(--soft); font-size: 0.95rem; }
+</style>
+</head>
+<body class="home">
+<main>
+<header class="hero">
+<h1><img src="img/logo.webp" alt="Bubble Punks" width="1100" height="744"><sup>™</sup></h1>
+</header>
+<div class="text">
+<p class="chant"><span>Chew.</span> <span>Blow.</span> <span>Pop.</span></p>
+<p class="pitch">Trap your rivals in bubbles. Pop them. Last crew standing wins.</p>
+<p><span class="soon">Coming soon to iPhone, iPad and Android.</span></p>
+<p class="follow">Follow the clues on X: <a href="https://x.com/PlayBubblePunks">@PlayBubblePunks</a></p>
+</div>
+<div class="about">
+<p>Made by Immersia Labs LLC</p>
+<p>Help: <a href="mailto:support@immersialabs.com">support@immersialabs.com</a></p>
+<footer>© 2026 Immersia Labs LLC</footer>
+</div>
+</main>
+</body>
+</html>
