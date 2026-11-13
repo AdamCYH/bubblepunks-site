@@ -57,9 +57,11 @@ footer { margin: 0.9rem 0 0; color: #8a84a0; font-size: 0.85rem; }
 .hero h1 img { margin-top: 1vh; }
 @media (min-width: 900px) { .hero { min-height: 64vh; padding-top: 3rem; }
   .hero h1 img { width: 520px; } }
-/* Line 4, the X link (the Deployment Engineer's spacing; the designer may
-   restyle it). */
+/* Line 4, the social links (the Designer, 12 Nov): the page's link style,
+   a bigger tap area that doesn't move the line, wraps only between items. */
 .follow { margin: 1rem 0 0; color: var(--soft); font-size: 0.95rem; }
+.follow a { display: inline-block; min-width: 1.5rem; padding: .4rem .25rem;
+  margin: -.4rem 0; text-align: center; white-space: nowrap; }
 </style>
 </head>
 <body class="home">
@@ -71,7 +73,7 @@ footer { margin: 0.9rem 0 0; color: #8a84a0; font-size: 0.85rem; }
 <p class="chant"><span>Chew.</span> <span>Blow.</span> <span>Pop.</span></p>
 <p class="pitch">Trap your rivals in bubbles. Pop them. Last crew standing wins.</p>
 <p><span class="soon">For iPhone, iPad and Android.</span></p>
-<p class="follow">Follow the clues on X: <a href="https://x.com/PlayBubblePunks">@PlayBubblePunks</a></p>
+<p class="follow">Follow the crew: <a href="https://x.com/PlayBubblePunks" rel="me">X</a> <span class="dot" aria-hidden="true">·</span> <a href="https://www.instagram.com/bubble_punks/" rel="me">Instagram</a> <span class="dot" aria-hidden="true">·</span> <a href="https://www.threads.com/@bubble_punks" rel="me">Threads</a></p>
 </div>
 <div class="about">
 <p>Made by Immersia Labs LLC</p>
