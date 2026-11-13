@@ -60,9 +60,15 @@ footer { margin: 0.9rem 0 0; color: #8a84a0; font-size: 0.85rem; }
 /* Line 4, the social links (the Designer, 12 Nov): the page's link style,
    a bigger tap area that doesn't move the line, wraps only between items. */
 .follow { margin: 1rem 0 0; color: var(--soft); font-size: 0.95rem; }
-.follow a { display: inline-block; min-width: 1.5rem; padding: .4rem .25rem;
-  margin: -.4rem 0; text-align: center; white-space: nowrap; }
-.follow .links { white-space: nowrap; }
+/* The platforms' own white logos (Adam's pick B, 12 Nov; Marketing's
+   files, unmodified: no container, glow or colour change), 24 px, each in
+   a 44 px tap area that doesn't move the line; kept together after the
+   words. The Designer. */
+.follow .icons { display: inline-flex; gap: .15rem; vertical-align: middle;
+  white-space: nowrap; margin-left: .2rem; }
+.follow .icons a { display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; margin: -10px 0; border-radius: 50%; color: #fff; }
+.follow .icons img { display: block; height: 24px; width: auto; }
 </style>
 </head>
 <body class="home">
@@ -74,7 +80,7 @@ footer { margin: 0.9rem 0 0; color: #8a84a0; font-size: 0.85rem; }
 <p class="chant"><span>Chew.</span> <span>Blow.</span> <span>Pop.</span></p>
 <p class="pitch">Trap your rivals in bubbles. Pop them. Last crew standing wins.</p>
 <p><span class="soon">For iPhone, iPad and Android.</span></p>
-<p class="follow">Follow the crew: <span class="links"><a href="https://x.com/PlayBubblePunks" rel="me">X</a> <span class="dot" aria-hidden="true">·</span> <a href="https://www.instagram.com/bubble_punks/" rel="me">Instagram</a> <span class="dot" aria-hidden="true">·</span> <a href="https://www.threads.com/@bubble_punks" rel="me">Threads</a></span></p>
+<p class="follow">Follow the crew: <span class="icons"><a href="https://x.com/PlayBubblePunks" rel="me" aria-label="Bubble Punks on X"><img src="img/social-x.svg" alt="" height="24"></a><a href="https://www.instagram.com/bubble_punks/" rel="me" aria-label="Bubble Punks on Instagram"><img src="img/social-instagram.svg" alt="" height="24"></a><a href="https://www.threads.com/@bubble_punks" rel="me" aria-label="Bubble Punks on Threads"><img src="img/social-threads.svg" alt="" height="24"></a></span></p>
 </div>
 <div class="about">
 <p>Made by Immersia Labs LLC</p>
