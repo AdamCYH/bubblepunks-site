@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; img-src 'self'">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Bubble Punks press kit: press release, fact sheet, logo, key art, screenshots and a gameplay clip.">
+<meta name="theme-color" content="#14121b">
+<title>Bubble Punks press kit</title>
+<style>
+:root { color-scheme: dark;
+  --night: #14121b; --panel: #211e2b; --line: #3d3850; --outline: #1a1424;
+  --ink: #f7f5ff; --soft: #b4aec8; --candy: #ff3d7f; --sky: #2ee6ff;
+  --sun: #ffc93d; --link: #8ff1ff; }
+html { background: var(--night); font-size: 106.25%; }
+@supports (font: -apple-system-body) { html { font: -apple-system-body; } }
+body { margin: 0; color: var(--ink); background: var(--night);
+  font-size: 1rem; line-height: 1.5;
+  font-family: ui-rounded, "SF Pro Rounded", system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; }
+.hero { position: relative; display: flex; flex-direction: column;
+  align-items: center; justify-content: flex-start; }
+.hero h1 { margin: 0; line-height: 0; }
+.hero h1 img { width: min(84vw, 560px); height: auto;
+  filter: drop-shadow(0 10px 24px rgba(0,0,0,.45)); }
+.hero h1 { position: relative; }
+.hero h1 sup { position: absolute; right: 2%; top: 8%; font-size: 0.8rem;
+  line-height: 1; color: var(--soft); font-weight: 700; }
+.text { max-width: 34rem; margin: 0 auto; padding: 0 1rem; }
+.chant { margin: 0.4rem 0 0; font-weight: 800;
+  font-size: clamp(1.4rem, 6vw, 1.9rem); }
+.chant span:nth-child(1) { color: var(--candy); }
+.chant span:nth-child(2) { color: var(--sky); }
+.chant span:nth-child(3) { color: var(--sun); }
+.pitch { margin: 0.8rem auto 0; max-width: 24rem; color: var(--soft);
+  font-size: 1.1rem; }
+.soon { display: inline-block; margin: 1.5rem auto 0; padding: 0.5rem 0.85rem;
+  border: 2px solid var(--line); border-radius: 1.4rem; background: var(--panel);
+  font-weight: 700; font-size: 0.85rem; }
+.soon::before { content: ""; display: inline-block; width: 0.55rem;
+  height: 0.55rem; margin-right: 0.55rem; border-radius: 50%;
+  background: var(--sky); box-shadow: 0 0 0.6rem var(--sky); vertical-align: 0.08em; }
+.about { margin-top: 3rem; padding: 0 1rem 2rem; color: var(--soft);
+  font-size: 0.92rem; }
+.about p { margin: 0.3rem 0; }
+a { color: var(--link); text-underline-offset: 0.18em; }
+nav { margin: 0.9rem 0 0; }
+nav a { display: inline-block; margin: 0.2rem 0.6rem; white-space: nowrap; }
+footer { margin: 0.9rem 0 0; color: #8a84a0; font-size: 0.85rem; }
+/* A: the rooftop fills the top, fading into the night. */
+.hero { min-height: 47svh; padding: 2.2rem 1rem 0;
+  background:
+    linear-gradient(to bottom, rgba(20,18,27,.15) 0%, rgba(20,18,27,0) 35%,
+      rgba(20,18,27,.55) 75%, var(--night) 100%),
+    url(/img/rooftop.jpg) center 22% / cover no-repeat; }
+.hero h1 img { margin-top: 1vh; }
+@media (min-width: 900px) { .hero { min-height: 64vh; padding-top: 3rem; }
+  .hero h1 img { width: 520px; } }
+/* Line 4, the social links (the Designer, 12 Nov): the page's link style,
+   a bigger tap area that doesn't move the line, wraps only between items. */
+.follow { margin: 1rem 0 0; color: var(--soft); font-size: 0.95rem; }
+/* The platforms' own white logos (Adam's pick B, 12 Nov; Marketing's
+   files, unmodified: no container, glow or colour change), 24 px, each in
+   a 44 px tap area that doesn't move the line; kept together after the
+   words. The Designer. */
+.follow .icons { display: inline-flex; gap: .15rem; vertical-align: middle;
+  white-space: nowrap; margin-left: .2rem; }
+.follow .icons a { display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; margin: -10px 0; border-radius: 50%; color: #fff; }
+.follow .icons img { display: block; height: 24px; width: auto; }
+/* /press (the Designer, 23 Nov): the home's night look, set for reading:
+   left-aligned, one column of up to 46rem. Every size that sets a layout
+   uses min(..., 100%) or wraps, so it holds at big iPhone text. */
+.press { max-width: 46rem; margin: 0 auto; padding: 1.4rem 1rem 0; text-align: left; }
+.press-top { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1.2rem; }
+.press-top .mark { flex: none; line-height: 0; }
+.press-top .mark img { width: 9rem; max-width: 40vw; height: auto;
+  filter: drop-shadow(0 6px 14px rgba(0,0,0,.45)); }
+.press-top div { flex: 1 1 14rem; min-width: 0; }
+.press h1 { margin: 0; font-size: clamp(1.7rem, 7vw, 2.4rem); line-height: 1.1; font-weight: 800; }
+.press .lead { margin: .35rem 0 0; color: var(--soft); font-size: 1.05rem; }
+.press h2 { margin: 2.4rem 0 .7rem; font-size: 1.3rem; line-height: 1.2; font-weight: 800; color: var(--sun); }
+.press p, .press li { overflow-wrap: anywhere; }
+.press p { margin: .55rem 0; }
+.press ul.punks { margin: .55rem 0; padding-left: 1.2rem; }
+.press ul.punks li { margin: .35rem 0; }
+.press small { color: var(--soft); font-size: .85rem; }
+
+/* Store badges: Apple's and Google's own files, unchanged. App Store first,
+   both 48 px tall (as seen: a file with built-in padding gets a taller
+   img so its visible badge is 48 px), 16 px apart and 12 px clear of
+   everything else (a quarter of the height, both brands' rule), on the
+   page's plain night color. */
+.stores { display: flex; flex-wrap: wrap; align-items: center; gap: 16px;
+  margin: 1.1rem 0 0; padding: 12px 0; }
+.stores .badge { display: block; line-height: 0; }
+.stores .badge img { display: block; height: 48px; width: auto; }
+/* Until the badge files are in: the store's name as a plain text link in a
+   pill (never a home-made badge). */
+.stores .store { display: inline-flex; align-items: center; min-height: 44px;
+  padding: 0 1rem; border: 2px solid var(--line); border-radius: 2rem;
+  background: var(--panel); color: var(--ink); font-weight: 700; text-decoration: none; }
+.home .text .stores { justify-content: center; margin-top: 1.2rem; }
+
+/* Everything in one file. */
+.all-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .9rem; margin: 1.2rem 0 0 !important; }
+.all { display: inline-flex; align-items: center; min-height: 44px; padding: .3rem 1.2rem;
+  border-radius: 2rem; background: var(--candy); color: var(--night);
+  font-weight: 800; text-decoration: none; }
+
+/* Fact sheet: label above value once the row is too narrow for both. */
+.facts { margin: 0; border: 1px solid var(--line); border-radius: 14px;
+  background: var(--panel); overflow: hidden; }
+.facts > div { display: flex; flex-wrap: wrap; gap: .1rem 1rem; padding: .7rem 1rem;
+  border-top: 1px solid var(--line); }
+.facts > div:first-child { border-top: 0; }
+.facts dt { flex: 1 1 8.5rem; max-width: 100%; color: var(--soft); font-weight: 700; }
+.facts dd { flex: 999 1 min(16rem, 100%); margin: 0; min-width: 0; overflow-wrap: anywhere; }
+
+/* Download tiles: a preview, the name, the file's kind and size, and the
+   download links (44 px tall). The preview links to the full file too. */
+.files { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(min(14rem, 100%), 1fr)); }
+.files li { display: flex; flex-direction: column; background: var(--panel);
+  border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.files .thumb { position: relative; display: block; aspect-ratio: 16 / 9;
+  background: #0e0c14; }
+.files .thumb img { position: absolute; inset: 0; display: block; width: 100%;
+  height: 100%; object-fit: contain; }
+.files .info { padding: .55rem .85rem .35rem; }
+.files .info b { display: block; line-height: 1.25; }
+.files .get { display: flex; flex-wrap: wrap; gap: 0 1.1rem; margin: .1rem 0 0 !important; }
+.files .get a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+
+/* Home and press footer: the help address wraps at 2x text instead of
+   running past a 375 px screen (live today; same fix as immersialabs.com). */
+.about p { overflow-wrap: anywhere; }
+</style>
+</head>
+<body class="home">
+<main>
+<div class="press">
+<header class="press-top"><a class="mark" href="/"><img src="/img/logo.webp" alt="Bubble Punks home" width="1100" height="744"></a><div><h1>Bubble Punks™ press kit</h1></div></header>
+<p class="stores"><a class="badge" href="https://apps.apple.com/app/id6826105046?ct=site"><img src="/img/badge_app_store.svg" alt="Download on the App Store" height="40"></a><a class="badge" href="https://play.google.com/store/apps/details?id=com.immersialabs.bubblepunks&amp;referrer=utm_source%3Dsite"><img src="/img/badge_google_play.svg" alt="Get it on Google Play" height="40"></a></p>
+<p class="all-wrap"><a class="all" href="/press/bubble-punks-press-kit.zip" download>Download everything</a><small>ZIP · 19.9 MB</small></p>
+<h2>Press release</h2>
+<p><strong>Bubble Punks™ is out now: a three-minute party battle game for iPhone, iPad and Android</strong></p>
+<p>Trap your rivals in bubbles, pop them, and be the last crew standing, online or on one Wi-Fi with no internet needed.</p>
+<p>November 24, 2026. Immersia Labs today launched Bubble Punks™, a party battle game for iPhone, iPad and Android, in the US. Players drop gum bubbles, catch rivals in the splash, and pop them before their crew comes to the rescue. Rounds last three minutes at most, so there's always time for one more.</p>
+<p><strong>Play with your crew.</strong> Find a match on a team or solo, team up with up to 3 friends, or open a room for up to 8 players with a shareable code. Phones on the same Wi-Fi can play together with no internet needed, made for Thanksgiving week, when friends and families are in the same room. Practice against computer players any time.</p>
+<p><strong>Punks with attitude.</strong> Riot, Volt, Moss and Sunny settle who's boss in Drip City, a neon night city, across three arenas: Neon Rooftops, Toy Factory and Ice Arcade. Conveyor belts flip direction, ice sends you sliding, and thirteen items drop mid-fight.</p>
+<p><strong>Popped isn't out.</strong> In online matches, a popped Punk can climb onto the Ledge, the roof's edge around the board, and keep playing from there until the round is over.</p>
+<p><strong>Looks, never power.</strong> Season 0 is on: players earn new frames, poses, titles and colors as they play. What you earn or unlock changes how you look, never how you play. Bubble Punks costs nothing to download, with in-app purchases, and has no ads.</p>
+<p>Bubble Punks is out now on the App Store and Google Play in the US, in English: <a href="https://apps.apple.com/app/id6826105046?ct=site">App Store</a> · <a href="https://play.google.com/store/apps/details?id=com.immersialabs.bubblepunks&amp;referrer=utm_source%3Dsite">Google Play</a></p>
+<p><strong>About Immersia Labs.</strong> Immersia Labs is an independent studio making its own games and apps: Bubble Punks, a pocket-sized party battle game, and Infinite Reading, where the story sets the scene. For iPhone, iPad and Android.</p>
+<p>Contact: <a href="mailto:support@immersialabs.com">support@immersialabs.com</a></p>
+<h2>Fact sheet</h2>
+<dl class="facts"><div><dt>Game</dt><dd>Bubble Punks™</dd></div><div><dt>Studio</dt><dd>Immersia Labs, an independent studio (developer and publisher)</dd></div><div><dt>Launch</dt><dd>Tue 24 Nov 2026, App Store and Google Play (US, English)</dd></div><div><dt>Platforms</dt><dd>iPhone, iPad and Android</dd></div><div><dt>Price</dt><dd>Costs nothing to download, with in-app purchases. No ads</dd></div><div><dt>What's sold</dt><dd>Glowdrops, the paid in-game currency, which unlock Punks and the season pass. Gum, which players earn by playing, is never sold. Nothing random is sold</dd></div><div><dt>Ratings</dt><dd>App Store 9+, Google Play Everyone 10+</dd></div><div><dt>Genre</dt><dd>Party battle: trap rivals in bubbles, pop them, last crew standing wins</dd></div><div><dt>Rounds</dt><dd>Three minutes at most</dd></div><div><dt>Ways to play</dt><dd>Find a match (on a team, or solo, every Punk for themselves); team up with up to 3 friends; rooms for up to 8 players with a shareable code; Wi-Fi play with phones on the same Wi-Fi, no internet needed; Practice against computer players any time</dd></div><div><dt>Arenas</dt><dd>Neon Rooftops, Toy Factory, Ice Arcade</dd></div><div><dt>Punks</dt><dd>Riot, Volt, Moss and Sunny (how each is got: below)</dd></div><div><dt>Items</dt><dd>Fresh Kicks to run faster, Mega Fizz for a monster splash, and eleven more</dd></div><div><dt>Season</dt><dd>Season 0 is on: earn new frames, poses, titles and colors as you play. What you earn or unlock changes how you look, never how you play</dd></div><div><dt>Online</dt><dd>Online play needs an internet connection. When few people are online, computer players may fill empty seats</dd></div><div><dt>Under the hood</dt><dd>Our own game server, running on Google Cloud</dd></div><div><dt>Website</dt><dd><a href="https://bubblepunks.com">bubblepunks.com</a> · Studio: <a href="https://immersialabs.com">immersialabs.com</a></dd></div><div><dt>Contact</dt><dd><a href="mailto:support@immersialabs.com">support@immersialabs.com</a></dd></div></dl><h2>How each Punk is got</h2>
+<ul class="punks">
+<li>Riot: playable from the start.
+</li>
+<li>Volt: a welcome gift after your first online match.
+</li>
+<li>Moss: earn him free at the last tier of Season 0's free rewards, get him at once with the paid Season 0 pass, or unlock him for 300 Glowdrops, the game's currency, which comes in packs.
+</li>
+<li>Sunny: play him in Practice from day one. Own him by reaching the top of the paid Season 0 pass.
+</li>
+<li>Practice offers all four Punks. Online and Wi-Fi matches use the Punks you own.
+</li>
+</ul>
+<h2>About the game</h2>
+<p>Trap your rivals in bubbles. Pop them. Last crew standing wins.</p>
+<p>When the shutters come down in Drip City, the Punks come out to settle who's boss. Drop a gum bubble, catch a rival in the splash, and pop them before their crew comes to the rescue. Back in the box! Rounds last three minutes at most, so there's always time for one more.</p>
+<h2>About the studio</h2>
+<p>Immersia Labs is an independent studio making its own games and apps: Bubble Punks, a pocket-sized party battle game, and Infinite Reading, where the story sets the scene. For iPhone, iPad and Android.</p>
+<h2 id="pictures">Pictures</h2>
+<ul class="files"><li><a class="thumb" href="/press/s0_key_v2.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_key_art.webp" alt="" loading="lazy" width="720" height="402"></a><div class="info"><b>Key art</b><small>JPG · 5504 × 3072 · 3.9 MB</small><p class="get"><a href="/press/s0_key_v2.jpg" download>Download</a></p></div></li><li><a class="thumb" href="/press/logo_cutout.png" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_logo.webp" alt="" loading="lazy" width="560" height="379"></a><div class="info"><b>Logo</b><small>PNG, transparent · 1100 × 744 · 0.7 MB</small><p class="get"><a href="/press/logo_cutout.png" download>Download</a></p></div></li><li><a class="thumb" href="/press/icon_512.png" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_icon.webp" alt="" loading="lazy" width="256" height="256"></a><div class="info"><b>App icon</b><small>PNG · 512 × 512 · 0.4 MB</small><p class="get"><a href="/press/icon_512.png" download>Download</a></p></div></li><li><a class="thumb" href="/press/feature_graphic.png" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_feature.webp" alt="" loading="lazy" width="720" height="352"></a><div class="info"><b>Banner</b><small>PNG · 1024 × 500 · 0.7 MB</small><p class="get"><a href="/press/feature_graphic.png" download>Download</a></p></div></li></ul>
+<h2 id="screenshots">Screenshots</h2>
+<ul class="files"><li><a class="thumb" href="/press/iphone/screenshot_1_factory.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_1_factory.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 1</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_1_factory.jpg" download>iPhone</a><a href="/press/ipad/screenshot_1_factory.jpg" download>iPad</a></p></div></li><li><a class="thumb" href="/press/iphone/screenshot_2_results.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_2_results.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 2</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_2_results.jpg" download>iPhone</a><a href="/press/ipad/screenshot_2_results.jpg" download>iPad</a></p></div></li><li><a class="thumb" href="/press/iphone/screenshot_3_punks.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_3_punks.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 3</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_3_punks.jpg" download>iPhone</a><a href="/press/ipad/screenshot_3_punks.jpg" download>iPad</a></p></div></li><li><a class="thumb" href="/press/iphone/screenshot_4_ice.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_4_ice.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 4</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_4_ice.jpg" download>iPhone</a><a href="/press/ipad/screenshot_4_ice.jpg" download>iPad</a></p></div></li><li><a class="thumb" href="/press/iphone/screenshot_5_arenas.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_5_arenas.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 5</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_5_arenas.jpg" download>iPhone</a><a href="/press/ipad/screenshot_5_arenas.jpg" download>iPad</a></p></div></li><li><a class="thumb" href="/press/iphone/screenshot_6_online.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_6_online.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 6</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_6_online.jpg" download>iPhone</a><a href="/press/ipad/screenshot_6_online.jpg" download>iPad</a></p></div></li><li><a class="thumb" href="/press/iphone/screenshot_7_pass.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_7_pass.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 7</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_7_pass.jpg" download>iPhone</a><a href="/press/ipad/screenshot_7_pass.jpg" download>iPad</a></p></div></li><li><a class="thumb" href="/press/iphone/screenshot_8_look.jpg" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_shot_8_look.webp" alt="" loading="lazy" width="720" height="331"></a><div class="info"><b>Screenshot 8</b><small>iPhone 2868 × 1320 · iPad 2752 × 2064</small><p class="get"><a href="/press/iphone/screenshot_8_look.jpg" download>iPhone</a><a href="/press/ipad/screenshot_8_look.jpg" download>iPad</a></p></div></li></ul>
+<h2 id="video">Video</h2>
+<ul class="files"><li><a class="thumb" href="/press/x_G1_trap_pop.mp4" tabindex="-1" aria-hidden="true"><img src="/press/thumbs/press_clip.webp" alt="" loading="lazy" width="720" height="405"></a><div class="info"><b>Gameplay clip</b><small>MP4 · 1280 × 720 · 6 s · 1.4 MB</small><p class="get"><a href="/press/x_G1_trap_pop.mp4" download>Download</a></p></div></li></ul>
+</div>
+<div class="about">
+<p>Made by Immersia Labs LLC</p>
+<p>Help: <a href="mailto:support@immersialabs.com">support@immersialabs.com</a></p>
+<footer>© 2026 Immersia Labs LLC<br><small>Apple, the Apple logo, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc., registered in the U.S. and other countries. Google Play and the Google Play logo are trademarks of Google LLC. Android is a trademark of Google LLC.</small></footer>
+</div>
+</main>
+</body>
+</html>
