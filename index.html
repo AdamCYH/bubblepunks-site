@@ -136,12 +136,28 @@ footer { margin: 0.9rem 0 0; color: #8a84a0; font-size: 0.85rem; }
 /* Home and press footer: the help address wraps at 2x text instead of
    running past a 375 px screen (live today; same fix as immersialabs.com). */
 .about p { overflow-wrap: anywhere; }
+
+/* The crew on the roof (the Designer, 25 Nov): the four Punks, still frames
+   from the game's own clips, standing on the roof floor under the logo. */
+.crew { position: relative; display: flex; justify-content: center; align-items: flex-end;
+  gap: clamp(0px, 1.5vw, 28px); margin: clamp(-26px, -2vw, -8px) auto 0; width: min(100%, 980px); }
+/* Heights shrink with the screen so the four always fit in one row,
+   feet on one line, never squashed. */
+.crew img { display: block; flex: none; width: auto;
+  height: min(31vw, max(124px, 24vw), 250px);
+  filter: drop-shadow(0 10px 10px rgba(0,0,0,.5)); }
+.crew img:nth-child(1), .crew img:nth-child(3) { height: min(33vw, max(132px, 26vw), 268px); }
+/* Volt's snowboard sticks out to his left; it tucks behind Sunny. */
+.crew img:nth-child(1) { margin-right: calc(min(33vw, max(132px, 26vw), 268px) * -0.18); }
+@media (max-width: 520px) { .crew { gap: 0; } }
+.home .text { margin-top: .4rem; }
 </style>
 </head>
 <body class="home">
 <main>
 <header class="hero">
 <h1><img src="img/logo.webp" alt="Bubble Punks" width="1100" height="744"><sup>™</sup></h1>
+<div class="crew"><img src="img/crew_volt.webp" alt="Volt" width="478" height="540"><img src="img/crew_sunny.webp" alt="Sunny" width="359" height="540"><img src="img/crew_riot.webp" alt="Riot" width="357" height="540"><img src="img/crew_moss.webp" alt="Moss" width="357" height="540"></div>
 </header>
 <div class="text">
 <p class="chant"><span>Chew.</span> <span>Blow.</span> <span>Pop.</span></p>
